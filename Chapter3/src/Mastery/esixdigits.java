@@ -19,13 +19,15 @@ public class esixdigits {
 		System.out.print("Enter a three-digit number: ");
         int number = userInput.nextInt();
 		
+        //calculate and print the hundreds place
 		hundreds = (number / 100);
 		System.out.printf("Hundreds place digit: " + hundreds);
         
+        //calculate and print the tens place
 		tens = (number - (hundreds * 100))/10;
 		System.out.printf("\nTens place digit: " + tens);
 
-		
+        //calculate and print the ones place
 		ones = (number - (tens*10) - (hundreds*100));
 		System.out.printf("\nOnes place digit: " + ones);
 				
