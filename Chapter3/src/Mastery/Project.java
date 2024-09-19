@@ -1,5 +1,6 @@
 package Mastery;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Project {
@@ -9,35 +10,43 @@ public class Project {
 		Scanner userInput = new Scanner(System.in);
 		
 		System.out.print("Please enter how much time you spent designing your java project in minutes: ");
-		int designing = userInput.nextInt();
+		double designing = userInput.nextInt();
 		
 		System.out.print("Please enter how much timke you spent coding your java project in minutes: ");
-		int coding = userInput.nextInt();
+		double coding = userInput.nextInt();
 		
 		System.out.print("Please enter how much timke you spent debugging your java project in minutes: ");
-		int debugging = userInput.nextInt();
+		double debugging = userInput.nextInt();
 		
 		System.out.print("Please enter how much timke you spent testing your java project in minutes: ");
-		int testing = userInput.nextInt();
+		double testing = userInput.nextInt();
 		
-		int totaltime = (designing + coding + debugging + testing);
+		double totaltime = (designing + coding + debugging + testing);
 		
-		int designingtime = (designing*400)/totaltime;
+		double designingtime = (designing*100)/totaltime;
 		
-		int codingtime = (designing*400)/totaltime;
+		double codingtime = (coding*100)/totaltime;
 		
-		int debuggingtime = (designing*400)/totaltime;
+		double debuggingtime = (debugging*100)/totaltime;
 		
-		int testingtime = (designing*400)/totaltime;
+		double testingtime = (testing*100)/totaltime;
 		
+		 DecimalFormat designingtimef = new DecimalFormat("#.00");
+
+		 DecimalFormat codingtimef = new DecimalFormat("#.00");
+		 
+		 DecimalFormat debuggingtimef = new DecimalFormat("#.00");
+		 
+		 DecimalFormat testingtimef = new DecimalFormat("#.00");
 		
-		System.out.print("The percent of total time you spent designing your java project was: " + designingtime + "%");
+		System.out.print("The percent of total time you spent designing your java project was: " + (designingtimef.format(designingtime)) + "%");
 		
-		System.out.print("\nThe percent of time you spent coding your java project was: " + codingtime + "%");
+		System.out.print("\nThe percent of total time you spent coding your java project was: " + (codingtimef.format(codingtime)) + "%");
+	
+		System.out.print("\nThe percent of total time you spent debbuging your java project was: " + (debuggingtimef.format(debuggingtime)) + "%");
 		
-		System.out.print("\nThe percent of time you spent debugging your java project was: " + debuggingtime + "%");
-		
-		System.out.print("\nThe percent of time you spent testing your java project was: " + testingtime + "%");
+		System.out.print("\nThe percent of total time you spent testing your java project was: " + (testingtimef.format(testingtime)) + "%");
+	
 				
 	}
 		
