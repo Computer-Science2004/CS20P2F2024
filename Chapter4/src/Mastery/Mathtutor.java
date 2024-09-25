@@ -35,10 +35,14 @@ public class Mathtutor {
     
     int answer3=(num1/num2);
     int answer4=(num1%num2);
-	if (operation==4) {{System.out.print ("What is the whole number " + num1 + " / " + num2 + "(no decimal's or remandair): ");
+	if (operation==4) {{System.out.print ("What is the whole number " + num1 + " / " + num2 + "(no decimal's or remainder): ");
 	answer3 = input.nextInt();}
-    if (answer3!=num1/num2) { System.out.print ("Incorrect"); }}
-    else if (answer3==(num1/num2)) { System.out.print ("Now What is the Remainder of " + num1 + " / " + num2); }
+    if (answer3!=num1/num2) { System.out.print ("Incorrect"); }
+	
+    	if (answer3==(num1/num2)) { System.out.print ("Now What is the Remainder of " + num1 + " / " + num2 + ": "); }
+	}
+	
+	
 	answer4 = input.nextInt();
 		if (answer4!=num1%num2) { System.out.print ("Incorrect"); }
 		else if (answer4==num1%num2) { System.out.print ("Correct"); }
