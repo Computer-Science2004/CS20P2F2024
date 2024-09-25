@@ -12,7 +12,7 @@ public class Election {
 		
 		System.out.println("\nPlease enter the election results for the following candidates in New York:");
      
-		System.out.println("\nAwbrey: ");
+		System.out.println("Awbrey: ");
 		double Awbreyny = userInput.nextInt();
 		
 		System.out.println("Martinez: ");
@@ -20,7 +20,7 @@ public class Election {
 		
 		
 		
-		System.out.print("\nPlease enter the election results for the following candidates in New Jersey: ");
+		System.out.println("\nPlease enter the election results for the following candidates in New Jersey:");
 	     
 		System.out.println("Awbrey: ");
 		double Awbreynj = userInput.nextInt();
@@ -31,7 +31,7 @@ public class Election {
 		
 		
 		
-		System.out.print("\nPlease enter the election results for the following candidates in Connecticut:");
+		System.out.println("\nPlease enter the election results for the following candidates in Connecticut:");
 	     
 		System.out.println("Awbrey: ");
 		double Awbreyc = userInput.nextInt();

@@ -8,7 +8,10 @@ public static void main(String[] args)
 {
 	Scanner userInput = new Scanner(System.in);
 	
-	int numbeads = 5;
+	double division = 4/3;
+	
+	System.out.print(division);
+	
 }
 
 }
