@@ -8,9 +8,9 @@ public static void main(String[] args)
 {
 	Scanner userInput = new Scanner(System.in);
 	
-	double division = 4/3;
+	double num1 =(double)(20*Math.random()+10);
 	
-	System.out.print(division);
+	System.out.print(num1);
 	
 }
 

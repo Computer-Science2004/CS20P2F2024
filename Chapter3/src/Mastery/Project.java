@@ -12,13 +12,13 @@ public class Project {
 		System.out.print("Please enter how much time you spent designing your java project in minutes: ");
 		double designing = userInput.nextInt();
 		
-		System.out.print("Please enter how much timke you spent coding your java project in minutes: ");
+		System.out.print("Please enter how much time you spent coding your java project in minutes: ");
 		double coding = userInput.nextInt();
 		
-		System.out.print("Please enter how much timke you spent debugging your java project in minutes: ");
+		System.out.print("Please enter how much time you spent debugging your java project in minutes: ");
 		double debugging = userInput.nextInt();
 		
-		System.out.print("Please enter how much timke you spent testing your java project in minutes: ");
+		System.out.print("Please enter how much time you spent testing your java project in minutes: ");
 		double testing = userInput.nextInt();
 		
 		double totaltime = (designing + coding + debugging + testing);
