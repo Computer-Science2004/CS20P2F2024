@@ -18,7 +18,7 @@ public class Numberssum {
 	for (int numbers = 1; numbers <= num; numbers += 1) {
 		System.out.print(numbers + "   ");	}
 	
-	int sum += 1
+	int sum += 1;
 	
 	
 	
