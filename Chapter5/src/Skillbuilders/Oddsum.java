@@ -1,8 +1,9 @@
-package test;
+package Skillbuilders;
 
 import java.util.Scanner;
 
-public class test {
+public class Oddsum {
+
 
 	 public static void main(String[] args) {
 	        Scanner s = new Scanner(System.in);
@@ -16,7 +17,7 @@ public class test {
 	            sum = sum + i;
 	        }
 
-	        System.out.print(sum);
+	        System.out.print("The summ of the odd numbers between 1 and your number is " + sum);
 	    }
 	}
 

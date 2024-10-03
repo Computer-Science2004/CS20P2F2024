@@ -10,16 +10,19 @@ public class Numberssum {
 	
 	Scanner input = new Scanner(System.in);
 	
+	int sum = 0;
+	
 	System.out.print("Enter a number: ");
 	int num = input.nextInt();
 	
-	System.out.print("The integers 1 to your number are: ");
+	System.out.print("The integers 1 to your number are:  ");
 	
 	for (int numbers = 1; numbers <= num; numbers += 1) {
-		System.out.print(numbers + "   ");	}
+		System.out.print(numbers + "   ");	
+		sum += numbers; }
 	
-	int sum += 1;
-	
+	System.out.println("");	
+	System.out.print("The sum of these numbers is: " + sum);
 	
 	
 	
