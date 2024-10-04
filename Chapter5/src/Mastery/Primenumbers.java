@@ -4,33 +4,26 @@ import java.util.Scanner;
 
 public class Primenumbers {
 
-	public class Prime {
+    public static void main(String[] args) {
+	    	
+    	Scanner input = new Scanner(System.in);
+    	
+    	System.out.print("Enter a number: ");
+    	int userinput = input.nextInt();
 
-		
-		static Scanner Scan = new Scanner (System.in);
-		
-	    public static void main(String[] args) {
-	        // TODO Auto-generated method stub
-	        System.out.println("Welcome to Prime!\nPlease enter a number:");
-	       
-	        int number = Scan.nextInt();
-	        System.out.println(number);
-
-	        if (number%1 == number && number%number == 1) {
-	            System.out.println(number + " is a prime num");
+    	int prime = 2;
+    	
+	    	
+	    	
+	    	
+	    	for (int division = 2; !(userinput%division == 0); division += 1) {
+	    		System.out.print(userinput + " is not a prime number.");	}
+	   
+	    	
+	    	
+	    	
+	    	
+	    	
 	        }
 	    }
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}
+
