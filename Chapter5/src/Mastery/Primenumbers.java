@@ -9,21 +9,21 @@ public class Primenumbers {
    
     Scanner input = new Scanner(System.in);
 
-    // Prompt the user to enter a number
+    //prompt the user to enter a number they want to know is prime
     System.out.print("Enter a number you want to know is prime or not: ");
     int number = input.nextInt();
 
-    // Assume the number is prime unless proven otherwise
-    boolean isPrime = true;
+    //set primecheck to true
+    boolean primecheck = true;
 
-    // Check divisability for numbers from 2 to number-1
-    for (int i = 2; i < number && isPrime; i++) {
-      // Use modulo operator to check if there is any divisor
-      isPrime = (number % i != 0);
+    // Check if their is a remainder for dividing by numbers from 2 to number-1
+    for (int i = 2; i < number && primecheck; i++) {
+      //modulo operator to check if there is any divisor
+      primecheck = (number % i != 0);
     }
 
-    // Output the result based on the isPrime flag ? is like an if else-statement
-    System.out.println(number + (isPrime ? " is a prime number." : " is not a prime number."));
+    //output the result based on the primecheck ? is like an if else-statement
+    System.out.println(number + (primecheck ? " is a prime number." : " is not a prime number."));
 
   
   }
