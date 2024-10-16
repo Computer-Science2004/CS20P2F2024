@@ -33,7 +33,7 @@ public class Primenumbers {
     // Check if their is a remainder for dividing by numbers from 2 to number-1
     for (int i = 2; i < number && primecheck; i++) {
       //modulo operator to check if there is any divisor
-      primecheck = (number % i != 0);
+      primecheck = (number % i!= 0);
     }
 
     //output the result based on the primecheck ? is like an if else-statement
