@@ -1,3 +1,17 @@
+/*
+
+Program: Primenumbers_Mastery.java          Date: October 1, 2024
+
+Purpose: A prime number application that prompts the user for a number and then displays a 
+message indicating whether the number is prime or not.
+
+
+
+School: CHHS
+Course: Computer Science 20
+ 
+*/
+
 package Mastery;
 
 import java.text.DecimalFormat;
@@ -29,3 +43,20 @@ public class Primenumbers {
   }
 }
 
+/* Screen Dump
+ 
+
+Test Case 1:
+Enter a number you want to know is prime or not: 24
+24 is not a prime number.
+
+Test Case 2:
+Enter a number you want to know is prime or not: 151
+151 is a prime number.
+
+Test Case 3
+Enter a number you want to know is prime or not: 5466
+5466 is not a prime number.
+
+ 
+ */

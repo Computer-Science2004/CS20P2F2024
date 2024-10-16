@@ -4,19 +4,12 @@ import java.util.Scanner;
 
 public class test {
 
-	 public static void main(String[] args) {
-	        Scanner s = new Scanner(System.in);
-	        System.out.print("Enter a number: ");
-	        int num1 = s.nextInt();
-	     
+	public static void main(String[] args) { 
 
-	        int sum = 0;
+		int sum = 0; for 
+		(int i = 3; i <= 10; i++) { sum += i; } 
+		System.out.println("The sum of integers from 3 to 10 is: " + sum); 
+		} 
+}
 
-	        for (int i = 1; i <= num1; i += 2) {
-	            sum = sum + i;
-	        }
-
-	        System.out.print(sum);
-	    }
-	}
 
