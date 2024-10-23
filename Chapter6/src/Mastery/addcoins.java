@@ -24,7 +24,6 @@ public class addcoins {
         String totalAmount = getDollarAmount(pennies, nickels, dimes, quarters);
         System.out.println("Total dollar amount: " + totalAmount);
 
-        scanner.close();
     }
 
     public static String getDollarAmount(int pennies, int nickels, int dimes, int quarters) {
