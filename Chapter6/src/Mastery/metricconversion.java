@@ -1,9 +1,9 @@
 /*
 
-Program: Groupassignment_Mastery.java          Date: October 1, 2024
+Program: metricconversion_Mastery.java          Date: October 28, 2024
 
-Purpose: A group assignment application that prompts the user for their first and last 
-name and then outputs a group based on the first letter of their last name.
+Purpose: A Metric Conversion Application that displays a menu of conversion choices and then prompts the user to choose a conversion
+Conversion choices include inches to centimeters, feet to centimeters, yards to meters, miles to kilometers, and vice versa. Application uses methods.
 
 
 
@@ -32,81 +32,89 @@ public class metricconversion {
         System.out.println("7. Miles to Kilometers");
         System.out.println("8. Kilometers to Miles");
 
-        int choice = scanner.nextInt();
+        int choice = scanner.nextInt(); // Number chosen is the switch case that is used
 
-        // Pick a conversion calculation and output based on the number selected
-        switch (choice) {
-            case 1: // is selection 1
-                System.out.print("Enter centimeters: ");
-                double cm = scanner.nextDouble();
-                double inches = cm * 0.393701;
-                System.out.printf("%.2f centimeters is %.2f inches.", cm, inches);
-                break;
+      
+        System.out.print("Enter value to convert: ");
+        double input = scanner.nextDouble(); // The number the user wants to convert
+    
+        double answer = getConversionNum(choice, input); // result = what you get from getConversionNum using choice and input
+
+        // Prints the result of the conversion from the getConversionNum method
+        System.out.printf("The value converted is: %.2f\n", answer);
+    }
+
+    // Method that does the conversion based on the user's choice
+    public static double getConversionNum(int choice, double value) { // parameters begin passed are choice and value
+       
+    	switch (choice) {
+            case 1:
+                return value * 0.393701; // Centimeters to Inches returning this value
             case 2:
-                System.out.print("Enter inches: ");
-                inches = scanner.nextDouble();
-                cm = inches * 2.54;
-                System.out.printf("%.2f inches is %.2f centimeters.", inches, cm);
-                break;
+                return value * 2.54;     // Inches to Centimeters returning this value
             case 3:
-                System.out.print("Enter feet: ");
-                double feet = scanner.nextDouble();
-                cm = feet * 30.48;
-                System.out.printf("%.2f feet is %.2f centimeters.", feet, cm);
-                break;
+                return value * 30.48;    // Feet to Centimeters returning this value
             case 4:
-                System.out.print("Enter centimeters: ");
-                cm = scanner.nextDouble();
-                feet = cm * 0.0328084;
-                System.out.printf("%.2f centimeters is %.2f feet.", cm, feet);
-                break;
+                return value * 0.0328084; // Centimeters to Feet returning this value
             case 5:
-                System.out.print("Enter yards: ");
-                double yards = scanner.nextDouble();
-                double meters = yards * 0.9144;
-                System.out.printf("%.2f yards is %.2f meters.", yards, meters);
-                break;
+                return value * 0.9144;   // Yards to Meters returning this value
             case 6:
-                System.out.print("Enter meters: ");
-                meters = scanner.nextDouble();
-                yards = meters * 1.09361;
-                System.out.printf("%.2f meters is %.2f yards.", meters, yards);
-                break;
+                return value * 1.09361;  // Meters to Yards returning this value
             case 7:
-                System.out.print("Enter miles: ");
-                double miles = scanner.nextDouble();
-                double kilometers = miles * 1.60934;
-                System.out.printf("%.2f miles is %.2f kilometers.", miles, kilometers);
-                break;
+                return value * 1.60934;  // Miles to Kilometers returning this value
             case 8:
-                System.out.print("Enter kilometers: ");
-                kilometers = scanner.nextDouble();
-                miles = kilometers * 0.621371;
-                System.out.printf("%.2f kilometers is %.2f miles.", kilometers, miles);
-                break;
+                return value * 0.621371; // Kilometers to Miles returning this value
             default:
-                System.out.println("Invalid choice.");
+                return 0; // In case the user doesn't select one of the 8 conversions
         }
     }
 }
+
 
 /* Screen Dump
 
 
 Test Case 1:
-Enter your first name: Hielan
-Enter your last name: Lee-Tremblay
-Hielan Lee-Tremblay is assigned to Group 2
+Select a unit conversion (enter the number that correlates to your conversion):
+1. Centimeters to Inches
+2. Inches to Centimeters
+3. Feet to Centimeters
+4. Centimeters to Feet
+5. Yards to Meters
+6. Meters to Yards
+7. Miles to Kilometers
+8. Kilometers to Miles
+7
+Enter value to convert: 24
+The value converted is: 38.62
 
 Test Case 2:
-Enter your first name: Ethan 
-Enter your last name: Xavier
-Ethan  Xavier is assigned to Group 3
+Select a unit conversion (enter the number that correlates to your conversion):
+1. Centimeters to Inches
+2. Inches to Centimeters
+3. Feet to Centimeters
+4. Centimeters to Feet
+5. Yards to Meters
+6. Meters to Yards
+7. Miles to Kilometers
+8. Kilometers to Miles
+1
+Enter value to convert: 23
+The value converted is: 9.06
 
 Test Case 3
-Enter your first name: Rose
-Enter your last name: Annabell
-Rose Annabell is assigned to Group 1
+Select a unit conversion (enter the number that correlates to your conversion):
+1. Centimeters to Inches
+2. Inches to Centimeters
+3. Feet to Centimeters
+4. Centimeters to Feet
+5. Yards to Meters
+6. Meters to Yards
+7. Miles to Kilometers
+8. Kilometers to Miles
+4
+Enter value to convert: 65
+The value converted is: 2.13
 
 
  
