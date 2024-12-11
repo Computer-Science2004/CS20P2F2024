@@ -40,20 +40,20 @@ public class EvensAndOdds { // public class name EvensAndOdds
            } else { // If the number is not even, it must be odd (there is a remainder)
                odds.add(randomNumbers[i]); // If it isn't true add it to the odds list
            } // close else condition
-       } // close for loop
+       } // close if-else statement part of the for loop
        
        // Display all even numbers
        System.out.print("EVEN: "); // Indicate that these are even numbers
        for (int even : evens) { // Loop through each number in the evens list
            System.out.print(even + " "); // Print each even number followed by a space so that they are not combined together
-       }
+       } // Close print part of for loop 
        // Display all odd numbers
        System.out.print("\nODD: "); // Indicate that these are odd numbers
        for (int odd : odds) { // Loop through each number in the odds ArrayList and print it
            System.out.print(odd + " "); // Print each odd number followed by a space so that they are not combined together
-       }
-   }
-}
+       } // Close print part of for loop
+   } // close main method
+} // close the public class EvensAndOdds
 
 /* Screen Dump
 
