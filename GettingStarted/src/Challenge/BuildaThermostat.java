@@ -4,7 +4,6 @@ import com.phidget22.*;
 public class BuildaThermostat {
    public static void main(String[] args) throws Exception {
     // Create | Create objects for sensors, buttons, and LEDs
-    HumiditySensor humiditySensor = new HumiditySensor();
     TemperatureSensor temperatureSensor = new TemperatureSensor();
     DigitalInput redButton = new DigitalInput();
     DigitalInput greenButton = new DigitalInput();
@@ -12,7 +11,6 @@ public class BuildaThermostat {
     DigitalOutput greenLED = new DigitalOutput();
     double setTemperature = 21.0;  // Set the initial set temperature (starts at 21°C (70°F))
     // Open | Open sensors, buttons, and LEDs
-    humiditySensor.open(1000);
     temperatureSensor.open(1000);
     redButton.setHubPort(0);
     redButton.setIsHubPortDevice(true);
